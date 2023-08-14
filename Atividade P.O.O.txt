@@ -1,0 +1,76 @@
+1º)
+Classes são a "tipagem" dos atributos dos objetos.
+Objetos são a concretização dos atributos.
+
+Seguindo o exemplo do carro mencionado em sala, a classe CARRO pode ter os atributos modelo, cor e ano.
+O modelo Mazda RX-7 de cor laranja do ano de 1997 é um exemplo de objeto.
+
+2º)
+Os atributos são a descrição dos objetos.
+Os métodos são as ações dos objetos.
+
+O exemplo da questão anterior mostra os atributos cor, ano e modelo de um carro. Os métodos ligar, desligar, acelerar e frear completam o exemplo.
+
+3º)
+ _______________________________________________________________
+|	Atributos	|	Sistema que é importante	|
+|_______________________|_______________________________________|
+|	Peso		|	Academia			|
+|_______________________|_______________________________________|
+|	Tipo de CNH	|	Detran				|
+|_______________________|_______________________________________|
+|	Tipo de sangue	|	Plano de Saúde			|
+|_______________________|_______________________________________|
+|	Habili. destra	|					|
+|_______________________|_______________________________________|
+|	Percent. Gordura|	Academia			|
+|_______________________|_______________________________________|
+|	Saldo em conta	|	Bancário			|
+|_______________________|_______________________________________|
+|	Etinia		|	SUS				|
+|_______________________|_______________________________________|
+
+4º)
+a) Sim, acredito que isso ajuda muito na organização tanto do banco quanto do código, facilitando até a busca dos dados da conta e do titular simultaneamente.
+
+b) Sim, o array de objetos conta.
+
+5º) 
+I) Turma
+II) Professor
+III) Disciplina
+IV) Avaliação 
+V) Matrícula 
+
+6º) 
+I) Jogador:
+Atributos: nickname, vida, experiência, nível 
+Métodos: atacar, pular, planar, usar item
+
+II) Item:
+Atributos: raridade, descrição, nome
+Métodos: coletar, usar, upgrade
+
+III) Missão: 
+Atributos: objetivo, recompensa
+Métodos: coletar recompensa, coletar experiência
+
+IV) Loja:
+Atributos: preço, quantidade no estoque
+Métodos: comprar, vender
+
+V) Mapa:
+Atributos: coordenadas dos jogadores, locais de chefe
+Métodos: revelar áreas ocultas, adicionar marcadores
+
+VI) NPC:
+Atributos: missões, diálogos, nome
+Métodos: guiar o jogador, fornecer missões, fornecer informações
+
+VII) Inimigo:
+Atributos: tipo, experiência, vida, dano
+Métodos: atacar, morrer, perseguir
+
+
+
+
