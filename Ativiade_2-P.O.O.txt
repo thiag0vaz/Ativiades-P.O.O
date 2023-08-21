@@ -1,0 +1,87 @@
+1º) 
+Tipagem Dinâmica:
+Os tipos são verificados durante a execução do problema, permitindo a modificação de tipo ao longo do programa.
+
+Tipagem Estática:
+Os tipos são verificados durante a compilação, sendo necessário declarar o tipo de forma explícita.
+
+2º) 
+O principal problema da tipagem dinâmica são os erros de tipo, que podem occorer ao longo da execução do programa 
+devido à falta de verificação durante a compilação.
+
+3º) 
+_________________________
+|x = 5			|
+|x = "Hello, world!"	|
+|result = x + 10	|
+|print(result)		|
+|_______________________|
+
+Neste exemplo, a tipagem dinâmica permite que a variável x mude de um número inteiro para uma string. No entanto, 
+quando a operação x + 10 é executada, ocorrerá um erro, pois não é possível somar uma string com um número. 
+Isso resultará em uma exceção em tempo de execução do tipo *TypeError*. (EXEMPLO EM PYTHON)
+
+4º)
+_________________________________
+|#include <stdio.h>		|
+|				|
+|int main() {			|
+|    int x = 5;			|
+|    char c = 'A';		|
+|    				|
+|    x = x + c;			|
+|    				|
+|    printf("x = %d\n", x);	|
+|    				|
+|    return 0;			|
+|}				|
+|_______________________________|
+
+Neste exemplo, adiciona-se um valor char à variável int x. Embora a linguagem C possua tipagem estática, ela permite 
+que o valor do tipo char seja convertido para o tipo int durante a operação de adição.
+A linguagem C é considerada *tipagem fraca* devido a essa capacidade de realizar conversões automáticas entre tipos diferentes, 
+mesmo que isso possa gerar resultados imprecisos e não intuitivos.
+
+5º) 
+_________________________________________________
+|function processInput(input) {			|
+|    if (typeof input === 'number') {		|
+|        return input * 2;			|
+|    } else if (typeof input === 'string') {	|
+|        return input.toUpperCase();		|
+|    } else {					|
+|        return "Input cannot be processed.";	|
+|    }						|
+|}						|
+|						|
+|let userInput = getUserInput();  		|
+|let result = processInput(userInput);		|
+|console.log(result);				|
+|_______________________________________________|
+
+"Neste exemplo, o tipo "any" poderia ser usado para representar o tipo de entrada do usuário. Isso permitiria que a função processInput aceitasse qualquer tipo de entrada, como números, strings ou outros tipos, sem a necessidade de especificar um tipo específico. Embora isso possa tornar o código mais flexível, também pode aumentar a possibilidade de erros, já que a verificação de tipos é adiada para o tempo de execução.
+
+O uso de um tipo "any" pode ser benéfico em situações em que a estrutura do código é mais importante do que garantir a integridade dos tipos em tempo de compilação. No entanto, deve ser usado com cautela para evitar erros de tipo sutis e problemas de depuração." 
+A explicação e exemplo são do chatgpt e a única coisa que realmente captei é que esse tipo deve ser evitado, podendo ser substituido pela herança para facilitar até mesmo a identificação do erro.
+
+6º)
+Não, a linguagem permite receber inteiros e pf por ser mais flexível e parecer mais natural, já que usamos numeros inteiros e com pf diariamente. Esse detalhe não faz a linguagem ter a fraqueza da linguagem C por exemplo, pois ainda matem uma vereficação forte durante a compilaçao. (Um detalhe interessante da linguagem JS é que ela consegue realizar operações de subtração, divisão e multiplicação com strings e numbers, desde que a string seja números. No caso da adição, ela apenas concatena a string com o number.
+
+7º) 
+_________________________________________________________________________________________________________________________
+|public class Example {													|
+|    public static void main(String[] args) {										|
+|        String name = "Ely";												|
+|        double payment = 120.56;											|
+|        String language = "TypeScript";										|
+|															|
+|        String message = name + "\nMy payment time is " + payment + "\nand\nmy preferred language is " + language;	|
+|        System.out.println(message);											|
+|    }															|
+|}															|
+|_______________________________________________________________________________________________________________________|
+
+8º) 
+Não configurei (AINDA) porque estou decidido a usar Java na disciplina.
+
+
