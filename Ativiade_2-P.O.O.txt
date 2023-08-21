@@ -1,6 +1,6 @@
 1º) 
 Tipagem Dinâmica:
-Os tipos são verificados durante a execução do problema, permitindo a modificação de tipo ao longo do programa.
+Os tipos são verificados durante a execução do programa, permitindo a modificação de tipo ao longo do programa.
 
 Tipagem Estática:
 Os tipos são verificados durante a compilação, sendo necessário declarar o tipo de forma explícita.
