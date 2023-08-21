@@ -6,7 +6,7 @@ Tipagem Estática:
 Os tipos são verificados durante a compilação, sendo necessário declarar o tipo de forma explícita.
 
 2º) 
-O principal problema da tipagem dinâmica são os erros de tipo, que podem occorer ao longo da execução do programa 
+O principal problema da tipagem dinâmica são os erros de tipo, que podem ocorrer ao longo da execução do programa 
 devido à falta de verificação durante a compilação.
 
 3º) 
