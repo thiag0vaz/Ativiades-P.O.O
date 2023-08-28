@@ -1,0 +1,193 @@
+1º) Questão
+_________________________________________________________
+|public class Par {					|
+|							|
+|    public static boolean verificarPar(int numero) {	|
+|        return numero % 2 == 0;			|
+|    }							|
+|							|
+|    public static void main(String[] args) {		|
+|        int numero1 = 10;				|
+|        int numero2 = 7;				|
+|							|
+|        System.out.println(verificarPar(numero1)); 	|
+|        System.out.println(verificarPar(numero2)); 	|
+|}							|
+|_______________________________________________________|
+
+2º) Questão
+_________________________________________________________
+|public class Primo {					|
+|    							|
+|    public static boolean verificarPrimo(int numero) {	|
+|        if (numero <= 1) {				|
+|            return false;				|
+|        }						|
+|							|
+|        for (int i = 2; i <= Math.sqrt(numero); i++) {	|
+|            if (numero % i == 0) {			|
+|                return false;				|
+|            }						|
+|        }						|
+|							|
+|        return true;					|
+|    }							|
+|							|
+|    public static void main(String[] args) {		|
+|        int numero1 = 7;				|
+|        int numero2 = 10;				|
+|							|
+|        System.out.println(verificarPrimo(numero1));	|
+|        System.out.println(verificarPrimo(numero2));	|
+|    }							|
+|}							|
+|_______________________________________________________|
+
+3º) Questão
+_________________________________________________________________________
+|public class Saudacao {						|
+|									|
+|    public static void saudacaoNova(String nome, String pronome) {	|
+|        if (pronome == null || pronome.isEmpty()) {			|
+|            pronome = "Sr";						|
+|        }								|
+|									|
+|        System.out.println(pronome + ". " + nome);			|
+|    }									|
+|									|
+|    public static void main(String[] args) {				|
+|        String nome1 = "Maria";					|
+|        String nome2 = "João";						|
+|        String pronome1 = "Sra";					|
+|        String pronome2 = "";						|
+|									|
+|        saudacaoNova(nome1, pronome1);					|
+|        saudacaoNova(nome2, pronome2);					|
+|    }									|
+|}									|
+|_______________________________________________________________________|
+
+4º) Questão
+_________________________________________________________________________
+|import java.util.Arrays;						|
+|									|
+|public class Numeros_string {						|
+|									|
+|    public static String numerosSeparadosPorTraco(int[] numeros) {	|
+|        StringBuilder resultado = new StringBuilder();			|
+|									|
+|        Arrays.stream(numeros).forEach(numero -> {			|
+|            resultado.append(numero);					|
+|            resultado.append("-");					|
+|        });								|
+|									|
+|        if (resultado.length() > 0) {					|
+|            resultado.deleteCharAt(resultado.length() - 1); 		|
+|        }								|
+|									|
+|        return resultado.toString();					|
+|    }									|
+|									|	
+|    public static void main(String[] args) {				|
+|        int[] stringNumeros = { 1, 2, 3, 4, 5 };			|
+|									|
+|        String resultado = numerosSeparadosPorTraco(stringNumeros);	|
+|        System.out.println(resultado);					|
+|    }									|
+|}									|
+|_______________________________________________________________________|
+
+5º) Questão 
+_________________________________________________
+|function soma(x: number, y?: any): number {	|
+|return x + y					|
+|}						|
+|console.log(soma(1, 2)); //Deve mostrar 3	|
+|console.log(soma(1, "2")); //Deve mostrar 12	|
+|console.log(soma(1));	//Deve mostrar NaN	|
+|_______________________________________________|
+
+6º) Questão 
+_________________________________________________________
+|public class Exibir {					|
+|							|
+|    public static void exibir(String... strings) {	|
+|        for (String str : strings) {			|
+|            System.out.println(str);			|
+|        }						|
+|    }							|
+|							|
+|    public static void main(String[] args) {		|
+|        exibir("a", "b");           			|
+|        exibir("a", "b", "c");      			|
+|        exibir("a", "b", "c", "d"); 			|
+|    }							|
+|}							|
+|_______________________________________________________|
+
+7º) Questão 
+_________________________________________________________________________
+|public class Ola {							|
+|									|
+|    public static void main(String[] args) {				|
+|        Runnable ola = () -> {						|
+|            System.out.println("Olá");					|
+|        };								|
+|									|
+|        ola.run();							|
+|    }									|
+|}									|
+|// Poderia criar uma interface funcional para substituir o Runnable	|
+|// interface executar {						|
+|//      void executar();						|
+|// }									|
+|_______________________________________________________________________|
+
+8º) Questão 
+_________________________________________________________________________________________________________
+|import java.util.Arrays;										|
+|import java.util.List;											|
+|import java.util.stream.Collectors;									|
+|													|
+|public class FiltrarPares {										|
+|													|
+|    public static void main(String[] args) {								|
+|        List<Integer> array = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);	|
+|													|
+|        List<Integer> elementosPares = array.stream()							|
+|                .filter(numero -> numero % 2 == 0)							|
+|                .collect(Collectors.toList());								|
+|													|
+|        System.out.println(elementosPares); 								|
+|    }													|
+|}													|
+|//Usar a mesma lígica da atividade MENU da lista do Fábio						|
+|_______________________________________________________________________________________________________|
+
+9º) Questão 
+_________________________________________________________________________________________________________
+|import java.util.Arrays;										|
+|import java.util.List;											|
+|													|
+|public class MapReduce {										|
+|													|
+|    public static void main(String[] args) {								|
+|        List<Integer> lista = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);	|
+|													|
+|        List<Integer> listaDobrada = lista.stream()							|
+|                .map(numero -> numero * 2)								|
+|                .toList();										|
+|													|
+|        System.out.println("Lista dobrada: " + listaDobrada); 						|
+|													|
+|        int somaTotal = lista.stream()									|
+|                .reduce(0, (acumulador, numero) -> acumulador + numero);				|
+|													|
+|        System.out.println("Soma total: " + somaTotal); 						|
+|    }													|
+|}													|
+|//Usar a mesma lígica da atividade MENU da lista do Fábio						|
+|_______________________________________________________________________________________________________|
+
+10º) Questão
+Não consegui concluir
